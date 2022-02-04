@@ -10,157 +10,115 @@
 @import "_mixin.scss";
 
 
-
-
 // Assets:
-// Font: WorkSans, LarishNeue
 // font-family: 'Work Sans', sans-serif;
-
+// font-family: "LarishNeue";
 // Farbe: #fff / #000
-
-// Hinweise:
-// Suche nach -webkit-text-stroke und -webkit-text-stroke-color
-
-// —
-// Gevierstrich
-// ⌥ + ⇧Shift + -
-
 
 /*-Header-*/
 
 header{
     height: 100vh;
-    background-color: #000;
-    padding: 0 4rem;
-
-    .section1 article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10rem;
-
+    background-color: $black;
+    padding: $side-space;
+    .section1{
+        .line{
+            width: 100%;
+            height: 20rem;
+            background-color: black;
+        }
         h1{
-            font-family: 'Work Sans', sans-serif;
             font-weight: 300;
             margin: 4rem 0 0 0;
-            color: #fff;
-        }
-        h2:nth-of-type(1){
-            font-size: 6rem;
-            color: white;
-        }
-        h2:nth-of-type(2){
-            font-size: 6rem;
-            margin-top: -2%;
-            -webkit-text-stroke: 2px white;
-            // -webkit-text-stroke-color still unknown
-        }
-        p{
             color: $white;
+            text-align: center;
         }
-
-    }
-
-    .section1 .line{
-        width: 100%;
-        height: 20rem;
-        background-color: black;
+        .callout{
+            @include flex-FD-C-JC-C-AI-C();
+            margin-bottom: 10rem;
+                h2:nth-of-type(1){
+                    color: $white;
+                }
+                h2:nth-of-type(2){
+                    margin-top: -2%;
+                    -webkit-text-stroke: 2px white;
+                }
+                p{
+                    color: $white;
+                }
+        } 
     }
     .section-2{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100px;
-
+        @include flex-JC-SB-AI-C();
+        height: 20%;
         a{
             @include atag();
         }
-
         a:hover{
             @include ahover();
         }
-
         .logo{
-            background-color: black;
+            background-color: $black;
             height: 70px;
             width: 70px;
         }
-        
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
-
 }
 
 /*-Main-*/
 
+/*-Part-1/2-*/
+
 .main-section{
     height: 100%;
     background-color: $black;
-
-    article:nth-of-type(1){
-        display: flex;
-        align-items: center;
-        width: 80%;
-        height: 100vh;
-        padding: 0 4rem;
-        color: #fff;
-        h2{
-            font-size: 8rem;
+        article:nth-of-type(1){
+            width: 80%;
+            height: 100vh;
+            padding: $side-space;
+            color: $white;
         }
-    }
-    article:nth-of-type(2){
-        background-color: $black;
-        height: 100vh;
-        padding: 0 0 0 4rem;
-        display: flex;
-        color: $white;
-
-        aside:nth-of-type(1){
-            width: 50%;
+        article:nth-of-type(2){
+            background-color: $black;
+            height: 100vh;
+            padding: 0 0 0 4rem;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h2{
-                font-size: 8rem;
-            }
-
-            h2, p{
+            color: $white;
+            aside:nth-of-type(1){
+                width: 50%;
+                @include flex-FD-C-JC-C();
+                h2, p{
                 margin: 1rem 0;
-            }
+                }
         }
-
-        aside:nth-of-type(2){
-            width: 50%;
-
-            img{
-                width: 100%;
-                height: 80%;
-                object-fit: contain;
-                object-position: right;
-            }
+            aside:nth-of-type(2){
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 80%;
+                    object-fit: contain;
+                    object-position: right;
+                }
         }        
-
     }
-
 }
 
-/*--Main-Part3/4-*/
+/*-Part3/4-*/
 
 .stuck{
     height: 100%;
     position: relative;
-
     .stuck-value1{
         height: 100vh;
         width: 27%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: black;
+        @include flex-FD-C-JC-C();
+        color: $black;
         h2{
-            font-size: $large;
             line-height: 5rem;
         }
         p{
@@ -169,68 +127,55 @@ header{
             margin-top: 3%;
         }
     }
-
     .stuck-value2{
         height: 100vh;
         width: 27%;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
-        color: black;
-
+        @include flex-AI-C();
+        color: $black;
         p{
             line-height: 2rem;
         }
-
-        
     }
-
     img{
         position: absolute;
     }
-
     .act1{
         width: 325px;
         height: 200px;
         top: -6rem;
         right: 10rem;
     }
-
     .act2{
         width: 310px;
         height: 200px;
         top: 10rem;
         left: 3rem;
     }
-
     .act3{
         width: 310px;
         height: 200px;
         top: 35rem;
         right: 0rem;
     }
-
     .act4{
         width: 325px;
         height: 200px;
         top: 50rem;
         left: 30rem;
     }
-
     .act5{
         width: 310px;
         height: 200px;
         bottom: 45rem;
         right: 26rem;
     }
-
     .act6{
         width: 310px;
         height: 200px;
         bottom: 25rem;
         left: 0;
     }
-
     .act7{
         width: 450px;
         height: 250px;
@@ -240,26 +185,22 @@ header{
     }
 }
 
-/*--Section--GoldenBear--*/ 
-    
+/*--Part-5--*/ 
+
 .goldenBear{
     position: relative;
     height: 150vh;
     background-color: $black;
-    color: #fff;
+    color: $white;
     padding: $side-space;
-
     p:first-child{
         padding: 10% 0 2% 0;
     }
-
     .titles{
         display: flex;
-
         aside:nth-of-type(1){
             width: 50%;
             h2{
-                font-size: $large;
                 padding-right: 50%;
                 line-height: 5.5rem;
             }
@@ -267,16 +208,13 @@ header{
         aside:nth-of-type(2){
             width: 50%;
             h3{
-                font-size: $medium;
                 padding: 0 6% 3% 0;
             }
         }
     }
-
     img{
         position: absolute;
     }
-
     .bigBearPic{
         width: 1050px;
         height: 900px;
@@ -284,7 +222,6 @@ header{
         top: 45rem;
         z-index: 1;
     }
-
     .littleBearPic{
         width: 550px;
         height: 650px;
@@ -293,8 +230,8 @@ header{
         z-index: 2;
     }
 }
-/*-Section-PoopyBear-*/
-    
+
+/*-Part-6-*/
 
 .poppyBear{
     overflow: hidden;
@@ -303,18 +240,14 @@ header{
     background-color: $white;
     color: $black;
     padding: $side-space;
-
     p:first-child{
         padding: 30% 0 2% 0;
     }
-
     .headlines{
         display: flex;
-
         aside:nth-of-type(1){
             width: 50%;
             h2{
-                font-size: $large;
                 padding-right: 50%;
                 line-height: 5.5rem;
             }
@@ -322,16 +255,13 @@ header{
         aside:nth-of-type(2){
             width: 50%;
             h3{
-                font-size: $medium;
                 padding: 0 6% 3% 0;
             }
         }
     }
-
     img{
         position: absolute;
     }
-
     .poster{
         width: 550px;
         height: 700px;
@@ -339,20 +269,18 @@ header{
         bottom: 12rem;
         z-index: 1;
     }
-
     .rosebear{
         width: 950px;
         height: 950px;
         right: 9rem;
         bottom: 5rem;
     }
-
     .circle{
         width: 620px;
         height: 620px;
         top: -11rem;
         right: -11rem;
-        animation: spin 10s linear infinite;
+        animation: spin 10s linear infinite forwards;
     }
 }
 
@@ -363,110 +291,91 @@ header{
     
 }
 
-
 /*--Footer---*/
-/*--Section June21---*/
+
+/*--Part-1/2/3---*/
 
 footer{
     height: 100vh;
     background-color: $black;
     padding: $side-space;
     overflow: hidden;
-
     .juneSection{
         position: relative;
         height: 70vh;
-        padding: $side-space;
         background-color: $black;
-
         .juneArticle{
             color: $white;
             width: 35%;
-
             p{
             padding: 20% 0 5% 0;
             }
             h3{
-            font-size: $medium;
             margin-bottom: 3rem;
             }
-
             a{
                 @include atag();
             }
-
             a:hover{
                 @include ahover();
             }
         }
         .banner{
             position: absolute;
-            background-color: white;
+            background-color: $white;
             font-family: "LarishNeue";
-            width: 100%;
             top: 15rem;
-            right: -30rem;
+            right: -140rem;
             transform: rotate(40deg); 
-            
-            h1{
-                font-size: 5.5rem;
-                color: black;
-                animation: banner 8s linear infinite;
+            h5{
+                white-space: nowrap;
+                color: $black;
+                animation: banner 10s linear 0s infinite forwards;
                 transform: rotate(40deg);
-
+                width: 40%;
                 span{
-                    color: white;
-                    -webkit-text-stroke: 2px rgb(21, 19, 19);
+                    color: $white;
+                    -webkit-text-stroke: 2px $black;
                 }
             }
-
             @keyframes banner {
                 0%, 100%{
+                    transform: translateX(-20%);
+                }
+                20%{
                     transform: translateX(0%);
                 }
-                15%{
-                    transform: translateX(10%);
-                }
-                30%{
-                    transform: translateX(-10%);
-                }
                 40%{
-                    transform: translateX(0);
+                    transform: translateX(-30%);
                 }
-                65%{
-                    transform: translateX(20%);
-                } 
+                60%{
+                    transform: translateX(-60%);
+                }
                 80%{
-                    transform: translateX(30%);
+                    transform: translateX(-90%);
                 }
             }
         }
     }
-
     .dice{
         display: flex;
         justify-content: space-between;
-
         .footer-section{
-            padding: $side-space;
             color: $white;
             display: flex;
             flex-direction: column;
-    
+            margin-top: 5%;
             article img{
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 margin-right: 0.5rem;
             }
-    
             p{
                 margin: 2rem 0 1rem 0;
             }
         }
-    
         .footer-last{
-            padding: $side-space;
-            margin: 0 20% 5% 0;
+            margin: 0 10% 5% 0;
             display: flex;
             align-items: flex-end;
             .sfdw{

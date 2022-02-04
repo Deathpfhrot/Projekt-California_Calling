@@ -10,12 +10,24 @@
   scroll-behavior: smooth;
 }
 
-h2, h3 {
+h2, h3, h5 {
   font-family: "LarishNeue";
 }
 
-p {
+h1, p {
   font-family: "Work Sans", sans-serif;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 2.37rem;
+}
+
+h5 {
+  font-size: 8rem;
 }
 
 /*-Header-*/
@@ -24,45 +36,43 @@ header {
   background-color: #000;
   padding: 0 4rem;
 }
-header .section1 article {
+header .section1 .line {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+}
+header .section1 h1 {
+  font-weight: 300;
+  margin: 4rem 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+header .section1 .callout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 10rem;
 }
-header .section1 article h1 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  margin: 4rem 0 0 0;
+header .section1 .callout h2:nth-of-type(1) {
   color: #fff;
 }
-header .section1 article h2:nth-of-type(1) {
-  font-size: 6rem;
-  color: white;
-}
-header .section1 article h2:nth-of-type(2) {
-  font-size: 6rem;
+header .section1 .callout h2:nth-of-type(2) {
   margin-top: -2%;
   -webkit-text-stroke: 2px white;
 }
-header .section1 article p {
-  color: white;
-}
-header .section1 .line {
-  width: 100%;
-  height: 20rem;
-  background-color: black;
+header .section1 .callout p {
+  color: #fff;
 }
 header .section-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 20%;
 }
 header .section-2 a {
   color: #fff;
-  border: 1px solid white;
+  border: 1px solid #fff;
   text-decoration: none;
   padding: 1.2rem 3rem;
   background-color: #000;
@@ -72,45 +82,42 @@ header .section-2 a {
 header .section-2 a:hover {
   color: #000;
   background-color: #fff;
-  border: black;
+  border: #000;
 }
 header .section-2 .logo {
-  background-color: black;
+  background-color: #000;
   height: 70px;
   width: 70px;
 }
+header .section-2 img {
+  width: 100px;
+  height: 100px;
+}
 
 /*-Main-*/
+/*-Part-1/2-*/
 .main-section {
   height: 100%;
-  background-color: black;
+  background-color: #000;
 }
 .main-section article:nth-of-type(1) {
-  display: flex;
-  align-items: center;
   width: 80%;
   height: 100vh;
   padding: 0 4rem;
   color: #fff;
 }
-.main-section article:nth-of-type(1) h2 {
-  font-size: 8rem;
-}
 .main-section article:nth-of-type(2) {
-  background-color: black;
+  background-color: #000;
   height: 100vh;
   padding: 0 0 0 4rem;
   display: flex;
-  color: white;
+  color: #fff;
 }
 .main-section article:nth-of-type(2) aside:nth-of-type(1) {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.main-section article:nth-of-type(2) aside:nth-of-type(1) h2 {
-  font-size: 8rem;
 }
 .main-section article:nth-of-type(2) aside:nth-of-type(1) h2, .main-section article:nth-of-type(2) aside:nth-of-type(1) p {
   margin: 1rem 0;
@@ -127,7 +134,7 @@ header .section-2 .logo {
      object-position: right;
 }
 
-/*--Main-Part3/4-*/
+/*-Part3/4-*/
 .stuck {
   height: 100%;
   position: relative;
@@ -139,10 +146,9 @@ header .section-2 .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: black;
+  color: #000;
 }
 .stuck .stuck-value1 h2 {
-  font-size: 6rem;
   line-height: 5rem;
 }
 .stuck .stuck-value1 p {
@@ -156,7 +162,7 @@ header .section-2 .logo {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  color: black;
+  color: #000;
 }
 .stuck .stuck-value2 p {
   line-height: 2rem;
@@ -208,11 +214,11 @@ header .section-2 .logo {
   z-index: 2;
 }
 
-/*--Section--GoldenBear--*/
+/*--Part-5--*/
 .goldenBear {
   position: relative;
   height: 150vh;
-  background-color: black;
+  background-color: #000;
   color: #fff;
   padding: 0 4rem;
 }
@@ -226,7 +232,6 @@ header .section-2 .logo {
   width: 50%;
 }
 .goldenBear .titles aside:nth-of-type(1) h2 {
-  font-size: 6rem;
   padding-right: 50%;
   line-height: 5.5rem;
 }
@@ -234,7 +239,6 @@ header .section-2 .logo {
   width: 50%;
 }
 .goldenBear .titles aside:nth-of-type(2) h3 {
-  font-size: 2.37rem;
   padding: 0 6% 3% 0;
 }
 .goldenBear img {
@@ -255,13 +259,13 @@ header .section-2 .logo {
   z-index: 2;
 }
 
-/*-Section-PoopyBear-*/
+/*-Part-6-*/
 .poppyBear {
   overflow: hidden;
   position: relative;
   height: 220vh;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   padding: 0 4rem;
 }
 .poppyBear p:first-child {
@@ -274,7 +278,6 @@ header .section-2 .logo {
   width: 50%;
 }
 .poppyBear .headlines aside:nth-of-type(1) h2 {
-  font-size: 6rem;
   padding-right: 50%;
   line-height: 5.5rem;
 }
@@ -282,7 +285,6 @@ header .section-2 .logo {
   width: 50%;
 }
 .poppyBear .headlines aside:nth-of-type(2) h3 {
-  font-size: 2.37rem;
   padding: 0 6% 3% 0;
 }
 .poppyBear img {
@@ -306,8 +308,8 @@ header .section-2 .logo {
   height: 620px;
   top: -11rem;
   right: -11rem;
-  -webkit-animation: spin 10s linear infinite;
-          animation: spin 10s linear infinite;
+  -webkit-animation: spin 10s linear infinite forwards;
+          animation: spin 10s linear infinite forwards;
 }
 
 @-webkit-keyframes spin {
@@ -322,33 +324,31 @@ header .section-2 .logo {
   }
 }
 /*--Footer---*/
-/*--Section June21---*/
+/*--Part-1/2/3---*/
 footer {
   height: 100vh;
-  background-color: black;
+  background-color: #000;
   padding: 0 4rem;
   overflow: hidden;
 }
 footer .juneSection {
   position: relative;
   height: 70vh;
-  padding: 0 4rem;
-  background-color: black;
+  background-color: #000;
 }
 footer .juneSection .juneArticle {
-  color: white;
+  color: #fff;
   width: 35%;
 }
 footer .juneSection .juneArticle p {
   padding: 20% 0 5% 0;
 }
 footer .juneSection .juneArticle h3 {
-  font-size: 2.37rem;
   margin-bottom: 3rem;
 }
 footer .juneSection .juneArticle a {
   color: #fff;
-  border: 1px solid white;
+  border: 1px solid #fff;
   text-decoration: none;
   padding: 1.2rem 3rem;
   background-color: #000;
@@ -358,66 +358,60 @@ footer .juneSection .juneArticle a {
 footer .juneSection .juneArticle a:hover {
   color: #000;
   background-color: #fff;
-  border: black;
+  border: #000;
 }
 footer .juneSection .banner {
   position: absolute;
-  background-color: white;
+  background-color: #fff;
   font-family: "LarishNeue";
-  width: 100%;
   top: 15rem;
-  right: -30rem;
+  right: -140rem;
   transform: rotate(40deg);
 }
-footer .juneSection .banner h1 {
-  font-size: 5.5rem;
-  color: black;
-  -webkit-animation: banner 8s linear infinite;
-          animation: banner 8s linear infinite;
+footer .juneSection .banner h5 {
+  white-space: nowrap;
+  color: #000;
+  -webkit-animation: banner 10s linear 0s infinite forwards;
+          animation: banner 10s linear 0s infinite forwards;
   transform: rotate(40deg);
+  width: 40%;
 }
-footer .juneSection .banner h1 span {
-  color: white;
-  -webkit-text-stroke: 2px #151313;
+footer .juneSection .banner h5 span {
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
 }
 @-webkit-keyframes banner {
   0%, 100% {
+    transform: translateX(-20%);
+  }
+  20% {
     transform: translateX(0%);
   }
-  15% {
-    transform: translateX(10%);
-  }
-  30% {
-    transform: translateX(-10%);
-  }
   40% {
-    transform: translateX(0);
+    transform: translateX(-30%);
   }
-  65% {
-    transform: translateX(20%);
+  60% {
+    transform: translateX(-60%);
   }
   80% {
-    transform: translateX(30%);
+    transform: translateX(-90%);
   }
 }
 @keyframes banner {
   0%, 100% {
+    transform: translateX(-20%);
+  }
+  20% {
     transform: translateX(0%);
   }
-  15% {
-    transform: translateX(10%);
-  }
-  30% {
-    transform: translateX(-10%);
-  }
   40% {
-    transform: translateX(0);
+    transform: translateX(-30%);
   }
-  65% {
-    transform: translateX(20%);
+  60% {
+    transform: translateX(-60%);
   }
   80% {
-    transform: translateX(30%);
+    transform: translateX(-90%);
   }
 }
 footer .dice {
@@ -425,22 +419,21 @@ footer .dice {
   justify-content: space-between;
 }
 footer .dice .footer-section {
-  padding: 0 4rem;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
 }
 footer .dice .footer-section article img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 0.5rem;
 }
 footer .dice .footer-section p {
   margin: 2rem 0 1rem 0;
 }
 footer .dice .footer-last {
-  padding: 0 4rem;
-  margin: 0 20% 5% 0;
+  margin: 0 10% 5% 0;
   display: flex;
   align-items: flex-end;
 }

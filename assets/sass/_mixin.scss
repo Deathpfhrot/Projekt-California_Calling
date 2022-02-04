@@ -1,12 +1,37 @@
-@mixin flex-middle {
+@mixin flex-JC-C-AI-C {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@mixin flex-FD-C-JC-C-AI-C {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-JC-SB-AI-C{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-FD-C-JC-C {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-AI-C {
+    display: flex;
+    align-items: center;
+}
+
+
 @mixin atag {
     color: #fff;
-    border: 1px solid white;
+    border: 1px solid #fff;
     text-decoration: none;
     padding: 1.2rem 3rem;
     background-color: #000;
@@ -17,5 +42,5 @@
 @mixin ahover {
     color: #000;
     background-color: #fff;
-    border: black;
+    border: #000;
 }

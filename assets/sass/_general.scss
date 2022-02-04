@@ -5,10 +5,22 @@
     scroll-behavior: smooth;
 }
 
-h2, h3{
+h2, h3, h5{
     font-family: "LarishNeue";
 }
 
-p{
+h1, p{
     font-family: 'Work Sans', sans-serif;
+}
+
+h2{
+    font-size: 6rem;
+}
+
+h3{
+    font-size: 2.37rem;
+}
+
+h5{
+    font-size: 8rem;
 }
