@@ -392,8 +392,178 @@ footer{
     
 }
 
-// Bonus Layout für Tablet oder Smarthphone
+// Bonus Layout für Tablet
 
-@media screen {
+@media screen and (max-width: 768px){
+
+    header{
+        .section1{
+            .line{
+                height: 13rem;
+            }
+        }
+    }
+    .main-section{
+        article:nth-of-type(1){
+            display: flex;
+            align-items: center;
+            h5{
+                font-size: 4rem;
+            }
+        }
+        article:nth-of-type(2){
+            h5{
+                font-size: 4rem;
+            }
+        }
+    }
+    .stuck{
+        .stuck-value1{
+            width: 100%;
+            align-items: center;
+            h2{
+                text-align: center;
+            }
+            
+        }
+
+        .stuck-value2{
+            width: 100%;
+            text-align: center;
+            p{
+                padding: $side-space;
+            }
+        }
+        .act1{
+            top: 1rem;
+            right: 4rem;
+        }
+
+        .act2{
+            left: 4rem;
+            top: 3rem;
+        }
+
+        .act3{
+            right: 4rem;
+            top: 43rem;
+        }
+
+        .act4{
+            left: 4rem;
+            top: 39rem;
+        }
+
+        .act5{
+            right: 4rem;
+            top: 56rem;
+        }
+
+        .act6{
+            left: 4rem;
+            bottom: 35rem;
+        }
+
+        .act7{
+            right: 10rem;
+            bottom: 3rem;
+        }
+    }
     
+    .goldenBear{
+        .titles{
+            display: flex;
+            flex-direction: column;
+            aside:nth-of-type(1){
+                width: 100%;
+                h2{
+                    padding-right: 0;
+                }
+            }
+            aside:nth-of-type(2){
+                width: 100%;
+                h3{
+                    padding: 3% 6% 3% 0;
+                }
+                
+            }
+        }
+    }
+    .goldenBear{
+        .bigBearPic{
+            width: 450px;
+            height: 600px;
+            left: 4rem;
+            top: 50rem;
+        }
+        .littleBearPic{
+            width: 300px;
+            height: 400px;
+            right: 3rem;
+            bottom:-2rem;   
+        }
+    }
+    .poppyBear{
+        height: 175vh;
+        .headlines{
+            display: flex;
+            flex-direction: column;
+            aside:nth-of-type(1){
+                width: 100%;
+                h2{
+                    padding-right: 0;
+                }
+            }
+            aside:nth-of-type(2){
+                width: 100%;
+                h3{
+                    padding: 3% 6% 3% 0;
+                }
+            }
+            .circle{
+                width: 350px;
+                height: 350px;
+                top: -8rem;
+                right: -8rem;
+            }
+            .poster{
+                width: 210px;
+                height: 300px;
+                left: 5rem;
+                bottom: 14rem;
+            }
+            .rosebear{
+                width: 500px;
+                height: 500px;
+                right: 4rem;
+                bottom: 8rem;
+            }
+        }
+    }
+    footer{
+        .juneSection{
+            .juneArticle{
+                width: 100%;
+                p{
+                    padding: 30% 0 5% 0;
+                }
+            }
+            .banner{
+                border-top: 1px solid $black;
+                top: 0;
+                transform: rotate(0deg);
+            }
+        }
+        .dice{
+            .footer-section{
+                margin-top: 15%;
+                p{
+                    margin: 1rem 0 0.5rem 0;
+                }
+            }
+        }
+        .footer-last{
+            margin: 0 10% 0% 0;
+        }
+    }
 }

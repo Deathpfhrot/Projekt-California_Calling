@@ -445,4 +445,153 @@ footer .dice .footer-last .cross {
   width: 120px;
   height: 40px;
   margin-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  header .section1 .line {
+    height: 13rem;
+  }
+
+  .main-section article:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+  }
+  .main-section article:nth-of-type(1) h5 {
+    font-size: 4rem;
+  }
+  .main-section article:nth-of-type(2) h5 {
+    font-size: 4rem;
+  }
+
+  .stuck .stuck-value1 {
+    width: 100%;
+    align-items: center;
+  }
+  .stuck .stuck-value1 h2 {
+    text-align: center;
+  }
+  .stuck .stuck-value2 {
+    width: 100%;
+    text-align: center;
+  }
+  .stuck .stuck-value2 p {
+    padding: 0 4rem;
+  }
+  .stuck .act1 {
+    top: 1rem;
+    right: 4rem;
+  }
+  .stuck .act2 {
+    left: 4rem;
+    top: 3rem;
+  }
+  .stuck .act3 {
+    right: 4rem;
+    top: 43rem;
+  }
+  .stuck .act4 {
+    left: 4rem;
+    top: 39rem;
+  }
+  .stuck .act5 {
+    right: 4rem;
+    top: 56rem;
+  }
+  .stuck .act6 {
+    left: 4rem;
+    bottom: 35rem;
+  }
+  .stuck .act7 {
+    right: 10rem;
+    bottom: 3rem;
+  }
+
+  .goldenBear .titles {
+    display: flex;
+    flex-direction: column;
+  }
+  .goldenBear .titles aside:nth-of-type(1) {
+    width: 100%;
+  }
+  .goldenBear .titles aside:nth-of-type(1) h2 {
+    padding-right: 0;
+  }
+  .goldenBear .titles aside:nth-of-type(2) {
+    width: 100%;
+  }
+  .goldenBear .titles aside:nth-of-type(2) h3 {
+    padding: 3% 6% 3% 0;
+  }
+
+  .goldenBear .bigBearPic {
+    width: 450px;
+    height: 600px;
+    left: 4rem;
+    top: 50rem;
+  }
+  .goldenBear .littleBearPic {
+    width: 300px;
+    height: 400px;
+    right: 3rem;
+    bottom: -2rem;
+  }
+
+  .poppyBear {
+    height: 175vh;
+  }
+  .poppyBear .headlines {
+    display: flex;
+    flex-direction: column;
+  }
+  .poppyBear .headlines aside:nth-of-type(1) {
+    width: 100%;
+  }
+  .poppyBear .headlines aside:nth-of-type(1) h2 {
+    padding-right: 0;
+  }
+  .poppyBear .headlines aside:nth-of-type(2) {
+    width: 100%;
+  }
+  .poppyBear .headlines aside:nth-of-type(2) h3 {
+    padding: 3% 6% 3% 0;
+  }
+  .poppyBear .headlines .circle {
+    width: 350px;
+    height: 350px;
+    top: -8rem;
+    right: -8rem;
+  }
+  .poppyBear .headlines .poster {
+    width: 210px;
+    height: 300px;
+    left: 5rem;
+    bottom: 14rem;
+  }
+  .poppyBear .headlines .rosebear {
+    width: 500px;
+    height: 500px;
+    right: 4rem;
+    bottom: 8rem;
+  }
+
+  footer .juneSection .juneArticle {
+    width: 100%;
+  }
+  footer .juneSection .juneArticle p {
+    padding: 30% 0 5% 0;
+  }
+  footer .juneSection .banner {
+    border-top: 1px solid #000;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  footer .dice .footer-section {
+    margin-top: 15%;
+  }
+  footer .dice .footer-section p {
+    margin: 1rem 0 0.5rem 0;
+  }
+  footer .footer-last {
+    margin: 0 10% 0% 0;
+  }
 }/*# sourceMappingURL=main.css.map */
